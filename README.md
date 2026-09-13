@@ -1,2 +1,2 @@
 # Terravon
-Terravon — Real Estate Development OS · slug: terravon
+Terravon — Real Estate Development OS
