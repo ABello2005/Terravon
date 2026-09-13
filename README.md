@@ -1,4 +1,4 @@
-# Praxos — Real Estate Development OS
+# Terravon — Real Estate Development OS
 
 > An AI-powered operating system for the **complete real estate development lifecycle** — from finding land to designing, financing, building, selling, and operating the finished asset.
 
@@ -17,7 +17,7 @@
 
 ---
 
-Praxos is being built to answer one deceptively simple question:
+Terravon is being built to answer one deceptively simple question:
 
 > ### “What should I build on this land?”
 
@@ -27,7 +27,7 @@ It is **not** just a property-search app, an AI real estate chatbot, or a BIM to
 
 ## Table of contents
 
-- [What Praxos does](#what-praxos-does)
+- [What Terravon does](#what-Terravon-does)
 - [The developer's question, answered progressively](#the-developers-question-answered-progressively)
 - [Architecture at a glance](#architecture-at-a-glance)
 - [AI agent architecture](#ai-agent-architecture)
@@ -39,7 +39,7 @@ It is **not** just a property-search app, an AI real estate chatbot, or a BIM to
 - [Documentation](#documentation)
 - [About](#about)
 
-## What Praxos does
+## What Terravon does
 
 The platform is organized around eight product domains, each preserving structured data that feeds the next stage of the lifecycle:
 
@@ -70,7 +70,7 @@ A single parcel identified during acquisition stays connected to its feasibility
 
 ## Architecture at a glance
 
-Praxos is designed as an **AI-native, domain-oriented, API-first** platform with authoritative logic in deterministic services (AI orchestrates; it does not become the system of record).
+Terravon is designed as an **AI-native, domain-oriented, API-first** platform with authoritative logic in deterministic services (AI orchestrates; it does not become the system of record).
 
 ```text
 ┌───────────────────────────────────────────────────────────┐
@@ -110,7 +110,7 @@ Agents never touch production databases directly — they act through APIs and a
 
 ## ⭐ Engineering & delivery model (the differentiator)
 
-Beyond the product, Praxos is built with a **governed, multi-agent software engineering operating model** — the kind of role separation, boundary enforcement, and delivery discipline you'd expect from a mature platform team, applied to AI-assisted development.
+Beyond the product, Terravon is built with a **governed, multi-agent software engineering operating model** — the kind of role separation, boundary enforcement, and delivery discipline you'd expect from a mature platform team, applied to AI-assisted development.
 
 - **22 specialized engineering agents** (`.github/agents/*.agent.md`) — Product Owner, Architect, Backend, Frontend, Database, Platform, QA, Security, SRE, and more — each with explicitly **owned and forbidden paths**.
 - **Machine-enforced role boundaries** — a runtime `PreToolUse` hook ([`.github/hooks/`](.github/hooks/)) *hard-blocks* an agent from editing files outside its scope, backed by a manifest (`governance/agent-boundaries.yaml`) and a CI validator.
@@ -190,7 +190,7 @@ pytest
 
 ## Status & roadmap
 
-Praxos is an actively evolving platform. Current focus and direction:
+Terravon is an actively evolving platform. Current focus and direction:
 
 - **Implemented** — FastAPI backend foundation with a deterministic **land parcel scoring** API (GET/POST), health checks, tests, and the full engineering-governance system (agents, boundary enforcement, CI, skills, ADRs).
 - **In progress** — frontend (Next.js) foundation and expanding the land/feasibility domains.
@@ -208,9 +208,9 @@ See [`docs/PROJECT_ARCHITECTURE.md`](docs/PROJECT_ARCHITECTURE.md) (§23–24) f
 
 ## About
 
-**Adaramola Omolewa** — architect and builder of Praxos.
+**Abimbola Bello** — architect and builder of Terravon.
 
-- LinkedIn: [adaramola-omolewa](https://www.linkedin.com/in/adaramola-omolewa)
-- Email: [adaramolaomolewa25@gmail.com](mailto:adaramolaomolewa25@gmail.com)
+- LinkedIn: [Abimbola Bello]()
+- Email: [bello.abimbola2005@gmail.com](mailto:bello.abimbola2005@gmail.com)
 
-> Praxos demonstrates end-to-end platform thinking: an ambitious, domain-rich product vision paired with disciplined, governed engineering execution — from deterministic APIs and clear architecture to enforced role boundaries and production-grade CI/CD.
+> Terravon demonstrates end-to-end platform thinking: an ambitious, domain-rich product vision paired with disciplined, governed engineering execution — from deterministic APIs and clear architecture to enforced role boundaries and production-grade CI/CD.
